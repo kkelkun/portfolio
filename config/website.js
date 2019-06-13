@@ -4,7 +4,7 @@ module.exports = {
   siteTitleAlt: 'Thibault Capelli - Portfolio', // Alternative Site title for SEO
   siteHeadline: 'Creating marvelous art & blazginly fast websites', // Headline for schema.org JSONLD
   siteTitleShort: 'Thibault Capelli', // short_name for manifest
-  // siteUrl: 'https://emma.lekoarts.de', // Domain of your site. No trailing slash!
+  siteUrl: 'http://thibaultcapelli.fr', // Domain of your site. No trailing slash!
   siteLanguage: 'fr', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest
   siteDescription:

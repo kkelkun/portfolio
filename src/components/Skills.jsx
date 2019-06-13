@@ -26,17 +26,18 @@ const Skill = ({ name, rate }) => (
 );
 
 const Skills = ({ title, data }) => {
-  const skills = data.map(skill => (
-    <Skill key={skill.name} name={skill.name} rate={skill.rate} />
-  ));
-
-  return (
-    <Wrapper>
-      <h3>{title}</h3>
-      <Divider />
-      <Row>{skills}</Row>
-    </Wrapper>
-  );
+  if (data) {
+    const skills = data.map(skill => (
+      <Skill key={skill.name} name={skill.name} rate={skill.rate} />
+    ));
+    return (
+      <Wrapper>
+        <h3>{title}</h3>
+        <Divider />
+        <Row>{skills}</Row>
+      </Wrapper>
+    );
+  }
 };
 
 export default Skills;
